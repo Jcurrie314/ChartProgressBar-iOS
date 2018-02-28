@@ -1,0 +1,12 @@
+PODS:
+  - ChartProgressBar (1.0.4)
+
+DEPENDENCIES:
+  - ChartProgressBar
+
+SPEC CHECKSUMS:
+  ChartProgressBar: 1fe24fc286de1a3a8d02dcbdf6bc779c8e85865b
+
+PODFILE CHECKSUM: 11a74ace8c84f44a573e5ea9bcf5124c03e31747
+
+COCOAPODS: 1.4.0

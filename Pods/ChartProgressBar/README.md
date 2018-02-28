@@ -76,18 +76,13 @@ class ViewController: UIViewController, ChartProgressBarDelegate {
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.chart.enableBar(at: 3)
         }
-    }   
-  }
-```
-
-  To Handle ChartProgressBarDelegate
-  
-```
-  extension MainViewController: ChartProgressBarDelegate {
+    }
+    
+    //Delegate method to get the selected bar index
     func ChartProgressBar(_ chartProgressBar: ChartProgressBar, didSelectRowAt rowIndex: Int) {
         print(rowIndex)
     }
-}
+  }
 ```
 
 ## Useful methods

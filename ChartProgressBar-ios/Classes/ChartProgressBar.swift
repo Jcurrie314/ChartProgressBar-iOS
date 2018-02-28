@@ -3,30 +3,29 @@ import UIKit
 
 public class ChartProgressBar: UIView {
 	
-	var data: [BarData]?
-	var barWidth: Float = 15
-	var barHeight: Float = 180
-	var emptyColor: UIColor = UIColor.init(hexString: "e0e0e0")
-	var progressColor: UIColor = UIColor.init(hexString: "0086FF")
-	var progressDisableColor: UIColor = UIColor.init(hexString: "4bffffff")
-	var progressClickColor: UIColor = UIColor.init(hexString: "09467D")
-	var pinTxtColor: UIColor = UIColor.white
-	var pinBackgroundColor: UIColor = UIColor.darkGray
-	var barRadius: Float? = nil
-	var barTitleColor: UIColor = UIColor.init(hexString: "598DBC")
-	var barTitleSelectedColor: UIColor = UIColor.init(hexString: "FFFFFF")
-	var barTitleTxtSize: Float = 12
-	var barTitleWidth: Float = 30
-	var barTitleHeight: Float = 25
-	var pinTitleFont: UIFont?
-	var barTitleFont: UIFont?
-	var pinTxtSize: Float = 10
-	var pinWidth: Float = 30
-	var pinHeight: Float = 30
-	var pinMarginBottom: Float = 0
-	var pinMarginTop: Float = 0
-	var barsCanBeClick: Bool = false
-	
+	public var data: [BarData]?
+	public var barWidth: Float = 15
+	public var barHeight: Float = 180
+	public var emptyColor: UIColor = UIColor.init(hexString: "e0e0e0")
+	public var progressColor: UIColor = UIColor.init(hexString: "0086FF")
+	public var progressDisableColor: UIColor = UIColor.init(hexString: "4bffffff")
+	public var progressClickColor: UIColor = UIColor.init(hexString: "09467D")
+	public var pinTxtColor: UIColor = UIColor.white
+	public var pinBackgroundColor: UIColor = UIColor.darkGray
+	public var barRadius: Float? = nil
+	public var barTitleColor: UIColor = UIColor.init(hexString: "598DBC")
+	public var barTitleSelectedColor: UIColor = UIColor.init(hexString: "FFFFFF")
+	public var barTitleTxtSize: Float = 12
+	public var barTitleWidth: Float = 30
+	public var barTitleHeight: Float = 25
+	public var pinTitleFont: UIFont?
+	public var barTitleFont: UIFont?
+	public var pinTxtSize: Float = 10
+	public var pinWidth: Float = 30
+	public var pinHeight: Float = 30
+	public var pinMarginBottom: Float = 0
+	public var pinMarginTop: Float = 0
+	public var barsCanBeClick: Bool = false
 	private var oldClickedBar: Bar?
 	public var maxValue: Float = 100.0
 	private var isDataEmpty: Bool = true
@@ -390,8 +389,8 @@ public class ChartProgressBar: UIView {
 		bezierPath.addCurve(to: CGPoint(x: 71.45, y: 14.5), controlPoint1: CGPoint(x: 64.96, y: 29), controlPoint2: CGPoint(x: 71.45, y: 22.51))
 		bezierPath.addCurve(to: CGPoint(x: 56.95, y: 0), controlPoint1: CGPoint(x: 71.45, y: 6.49), controlPoint2: CGPoint(x: 64.96, y: 0))
 		bezierPath.close()
-		pinBackgroundColor.setFill()
-		bezierPath.fill()
+//		pinBackgroundColor.setFill()
+//		bezierPath.fill()
 		
 		let pinCALayer = CAShapeLayer()
 		pinCALayer.path = bezierPath.cgPath
