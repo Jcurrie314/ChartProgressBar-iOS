@@ -28,7 +28,7 @@ public class ChartProgressBar: UIView {
 	public var barsCanBeClick: Bool = false
 	private var oldClickedBar: Bar?
 	public var maxValue: Float = 100.0
-	private var isDataEmpty: Bool = true
+	public var isDataEmpty: Bool = true
 	public var delegate: ChartProgressBarDelegate?
 	
 	override init(frame: CGRect) {
